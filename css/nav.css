@@ -1,0 +1,54 @@
+.bottomNav{
+    position:fixed;
+    bottom:20px;
+    left:50%;
+    transform:translateX(-50%);
+    width:min(92%,420px);
+    height:72px;
+
+    background:rgba(18,28,43,.92);
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:28px;
+
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+
+    box-shadow:
+        0 10px 40px rgba(0,0,0,.45);
+
+    z-index:999;
+}
+
+.bottomNav button{
+
+    border:none;
+    background:none;
+
+    color:#93a6c2;
+
+    font-size:28px;
+
+    cursor:pointer;
+
+    transition:.25s;
+}
+
+.bottomNav button:hover{
+
+    transform:translateY(-4px);
+
+    color:#ffffff;
+
+}
+
+.bottomNav button.active{
+
+    color:#4da3ff;
+
+    transform:translateY(-4px) scale(1.15);
+
+}

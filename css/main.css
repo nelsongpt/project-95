@@ -1,0 +1,155 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+:root{
+    --bg:#08101b;
+    --card:#121c2b;
+    --card2:#19273c;
+    --accent:#4da3ff;
+    --text:#ffffff;
+    --muted:#98a7bb;
+    --radius:22px;
+}
+
+body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    background:linear-gradient(180deg,#08101b,#132033);
+    color:var(--text);
+    min-height:100vh;
+}
+
+#app{
+    max-width:430px;
+    margin:auto;
+    padding:22px;
+    padding-bottom:110px;
+}
+
+.topbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:28px;
+}
+
+.small{
+    color:#7fb8ff;
+    font-size:12px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+}
+
+h1{
+    font-size:30px;
+    margin-top:6px;
+}
+
+.avatar{
+    width:48px;
+    height:48px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:var(--accent);
+    font-weight:bold;
+    font-size:20px;
+}
+
+.hero{
+    background:rgba(255,255,255,.06);
+    backdrop-filter:blur(18px);
+    border-radius:28px;
+    padding:24px;
+    display:flex;
+    align-items:center;
+    gap:22px;
+    margin-bottom:24px;
+}
+
+.weightRing{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    background:
+    conic-gradient(
+        var(--accent) 307deg,
+        #2a3342 307deg
+    );
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.innerRing{
+    width:92px;
+    height:92px;
+    border-radius:50%;
+    background:#0f1825;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.innerRing h2{
+    font-size:28px;
+}
+
+.innerRing p{
+    color:var(--muted);
+    font-size:12px;
+}
+
+.heroText h2{
+    margin-bottom:8px;
+}
+
+.heroText p{
+    color:var(--muted);
+}
+
+.stats{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:14px;
+    margin-bottom:24px;
+}
+
+.card{
+    background:rgba(255,255,255,.05);
+    border-radius:22px;
+    padding:18px;
+    backdrop-filter:blur(14px);
+}
+
+.card h3{
+    margin-bottom:10px;
+    font-size:16px;
+}
+
+.card p{
+    color:var(--muted);
+}
+
+.mission label{
+    display:block;
+    margin-top:16px;
+    font-size:17px;
+}
+
+input[type=checkbox]{
+    margin-right:10px;
+    transform:scale(1.3);
+}
+
+.page{
+    display:none;
+}
+
+.page.active{
+    display:block;
+}

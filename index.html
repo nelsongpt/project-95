@@ -1,52 +1,193 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Project 95 OS</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 95 OS</title>
+
+    <link rel="manifest" href="manifest.json">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/nav.css">
+
+    <meta name="theme-color" content="#0B1220">
 </head>
+
 <body>
-<div class="phone">
-<header>
-<div class="small">PROJECT 95 OS</div>
-<h1>Good afternoon, Nelson</h1>
-<p>One app. One plan. One direction.</p>
+
+<div id="app">
+
+<header class="topbar">
+    <div>
+        <p class="small">PROJECT 95 OS</p>
+        <h1 id="greeting">Good Afternoon</h1>
+    </div>
+
+    <div class="avatar">
+        N
+    </div>
 </header>
 
+<main>
+
+<section id="dashboard" class="page active">
+
 <div class="hero">
-<div class="ring"><span>81kg</span></div>
-<div>
-<h2>Target 95kg</h2>
-<div class="bar"><div class="fill" style="width:85%"></div></div>
-<p>14kg to go</p>
-</div>
+
+<div class="weightRing">
+
+<div class="innerRing">
+
+<h2>81kg</h2>
+
+<p>Goal 95kg</p>
+
 </div>
 
-<section class="grid">
-<div class="card"><h3>🔥 Calories</h3><strong>0 / 3300</strong></div>
-<div class="card"><h3>💪 Protein</h3><strong>0 / 180g</strong></div>
-<div class="card"><h3>💰 Debt</h3><strong>$5,000</strong></div>
-<div class="card"><h3>📖 Reading</h3><strong>0 / 20 pages</strong></div>
-</section>
+</div>
 
-<section class="card">
+<div class="heroText">
+
 <h2>Today's Mission</h2>
-<label><input type="checkbox"> Work</label>
-<label><input type="checkbox"> Gym</label>
-<label><input type="checkbox"> Eat 3300 kcal</label>
-<label><input type="checkbox"> Read 20 pages</label>
-<label><input type="checkbox"> Sleep by 9pm</label>
+
+<p>Keep stacking wins.</p>
+
+</div>
+
+</div>
+
+<div class="stats">
+
+<div class="card">
+
+<h3>🔥 Calories</h3>
+
+<p id="calories">0 / 3300</p>
+
+</div>
+
+<div class="card">
+
+<h3>💪 Protein</h3>
+
+<p id="protein">0 / 180g</p>
+
+</div>
+
+<div class="card">
+
+<h3>💰 Debt</h3>
+
+<p>$5000</p>
+
+</div>
+
+<div class="card">
+
+<h3>📖 Reading</h3>
+
+<p>0 / 20 pages</p>
+
+</div>
+
+</div>
+
+<div class="card mission">
+
+<h2>Today's Checklist</h2>
+
+<label>
+<input type="checkbox">
+Work
+</label>
+
+<label>
+<input type="checkbox">
+Gym
+</label>
+
+<label>
+<input type="checkbox">
+3300 Calories
+</label>
+
+<label>
+<input type="checkbox">
+Read 20 Pages
+</label>
+
+<label>
+<input type="checkbox">
+Sleep by 9pm
+</label>
+
+</div>
+
 </section>
 
-<nav>
-<button>🏠</button>
-<button>🏋️</button>
-<button>🍔</button>
-<button>💰</button>
-<button>📈</button>
+<section id="gym" class="page">
+
+<h2>Gym</h2>
+
+<p>Coming in Update 2</p>
+
+</section>
+
+<section id="nutrition" class="page">
+
+<h2>Nutrition</h2>
+
+<p>Coming in Update 3</p>
+
+</section>
+
+<section id="finance" class="page">
+
+<h2>Finance</h2>
+
+<p>Coming in Update 4</p>
+
+</section>
+
+<section id="reading" class="page">
+
+<h2>Reading</h2>
+
+<p>Coming in Update 5</p>
+
+</section>
+
+<section id="settings" class="page">
+
+<h2>Settings</h2>
+
+<p>Project 95 OS v3</p>
+
+</section>
+
+</main>
+
+<nav class="bottomNav">
+
+<button data-page="dashboard">🏠</button>
+
+<button data-page="gym">🏋️</button>
+
+<button data-page="nutrition">🍔</button>
+
+<button data-page="finance">💰</button>
+
+<button data-page="reading">📚</button>
+
+<button data-page="settings">⚙️</button>
+
 </nav>
+
 </div>
-<script src="app.js"></script>
+
+<script src="js/storage.js"></script>
+<script src="js/navigation.js"></script>
+<script src="js/app.js"></script>
+
 </body>
 </html>

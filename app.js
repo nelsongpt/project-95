@@ -1,4 +1,1 @@
-document.querySelectorAll('input[type=checkbox]').forEach(cb=>{
-cb.addEventListener('change',()=>localStorage.setItem(cb.parentElement.textContent.trim(),cb.checked))
-cb.checked=localStorage.getItem(cb.parentElement.textContent.trim())==='true';
-});
+document.querySelectorAll('input').forEach(i=>{const k=i.parentElement.textContent.trim();i.checked=localStorage.getItem(k)==='1';i.onchange=()=>localStorage.setItem(k,i.checked?'1':'0')})

@@ -1,36 +1,52 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Project 95</title>
+<title>Project 95 OS</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header><h1>Project 95</h1><p>Welcome, Nelson.</p></header>
-<section class="card">
-<h2>Goals</h2>
-<ul>
-<li>Weight: <strong>81 → 95 kg</strong></li>
-<li>Debt: <strong>$5,000 → $0</strong></li>
-<li>Read 20 pages today</li>
-</ul>
+<div class="phone">
+<header>
+<div class="small">PROJECT 95 OS</div>
+<h1>Good afternoon, Nelson</h1>
+<p>One app. One plan. One direction.</p>
+</header>
+
+<div class="hero">
+<div class="ring"><span>81kg</span></div>
+<div>
+<h2>Target 95kg</h2>
+<div class="bar"><div class="fill" style="width:85%"></div></div>
+<p>14kg to go</p>
+</div>
+</div>
+
+<section class="grid">
+<div class="card"><h3>🔥 Calories</h3><strong>0 / 3300</strong></div>
+<div class="card"><h3>💪 Protein</h3><strong>0 / 180g</strong></div>
+<div class="card"><h3>💰 Debt</h3><strong>$5,000</strong></div>
+<div class="card"><h3>📖 Reading</h3><strong>0 / 20 pages</strong></div>
 </section>
+
 <section class="card">
 <h2>Today's Mission</h2>
 <label><input type="checkbox"> Work</label>
 <label><input type="checkbox"> Gym</label>
 <label><input type="checkbox"> Eat 3300 kcal</label>
 <label><input type="checkbox"> Read 20 pages</label>
-<label><input type="checkbox"> Bed by 9:00 pm</label>
+<label><input type="checkbox"> Sleep by 9pm</label>
 </section>
-<section class="card">
-<h2>Progress</h2>
-<p>Weight</p>
-<progress max="95" value="81"></progress>
-<p>Debt paid</p>
-<progress max="5000" value="0"></progress>
-</section>
+
+<nav>
+<button>🏠</button>
+<button>🏋️</button>
+<button>🍔</button>
+<button>💰</button>
+<button>📈</button>
+</nav>
+</div>
 <script src="app.js"></script>
 </body>
 </html>

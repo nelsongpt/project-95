@@ -1,3 +1,1 @@
-# Project 95
-
-Starter version.
+# Project 95 OS v2

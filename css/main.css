@@ -153,3 +153,48 @@ input[type=checkbox]{
 .page.active{
     display:block;
 }
+
+.progressBar{
+
+    width:100%;
+    height:12px;
+
+    background:#243246;
+
+    border-radius:100px;
+
+    overflow:hidden;
+
+    margin:14px 0;
+
+}
+
+.fill{
+
+    width:0%;
+
+    height:100%;
+
+    border-radius:100px;
+
+    background:linear-gradient(
+        90deg,
+        #4da3ff,
+        #71c7ff
+    );
+
+    transition:width .6s ease;
+
+}
+
+.progressCard{
+
+    transition:.25s;
+
+}
+
+.progressCard:hover{
+
+    transform:translateY(-4px);
+
+}
